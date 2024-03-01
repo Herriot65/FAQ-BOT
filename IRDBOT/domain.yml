@@ -3,31 +3,57 @@ version: "3.1"
 intents:
   - greet
   - goodbye
-  - affirm
-  - deny
-  - mood_great
-  - mood_unhappy
+  - user_state
+  - asking_for_help
+  - choose_book
+  - participate_reading_sessions
+  - available_quizzes_assignments
+  - connect_with_readers_authors
+  - track_progress
+  - encounter_technical_issues
+  - privacy_security_data
+  - access_special_copies_discounts
   - bot_challenge
 
 responses:
   utter_greet:
   - text: "Hey! How are you?"
 
-  utter_cheer_up:
-  - text: "Here is something to cheer you up:"
-    image: "https://i.imgur.com/nGF1K8f.jpg"
-
-  utter_did_that_help:
-  - text: "Did that help you?"
-
-  utter_happy:
-  - text: "Great, carry on!"
-
   utter_goodbye:
-  - text: "Bye"
+  - text: "It was a pleasure for me to assist you. Bye !"
+
+  utter_user_state:
+  - text: "Great ! How can I assist you today ? "
+
+  utter_asking_for_help:
+  - text: "Certainly! What do you want to know about?"
 
   utter_iamabot:
   - text: "I am a bot, powered by Rasa."
+
+  utter_choose_book:
+    - text: "IRead.tn categorizes books according to the Common European Framework of Reference for Languages (CEFR). To find a book that matches your English level, first determine your CEFR level (ranging from A1 for beginners to C2 for proficiency). You can then filter books in our library by your CEFR level. Additionally, we provide book summaries and sample pages to help you gauge if the book suits your reading comfort."
+    
+  utter_participate_reading_sessions:
+    - text: "To join our interactive reading sessions, first log into your IRead.tn account. Navigate to the 'Interactive Sessions' section where you can view the schedule. Choose a session that interests you and click 'Join'. Ensure you have a stable internet connection and a functioning microphone and speakers/headphones for the best experience. These sessions allow you to discuss the book, share insights, and ask questions"
+
+  utter_available_quizzes_assignments:
+    - text: "Our quizzes and assignments are designed to complement your reading. They range from multiple-choice questions to more in-depth writing assignments. After finishing a book, you'll find quizzes testing comprehension and vocabulary. Assignments may involve creative writing or critical thinking about the book's themes. These are tailored to align with the CEFR levels of the books."
+
+  utter_connect_with_readers_authors:
+    - text: "IRead.tn offers various ways to connect with others. You can join our community forums to discuss books, share reviews, and ask questions. We also host author events and Q&A sessions where you can interact with writers. To participate, check the 'Events' section on our platform for upcoming dates and registration details."
+
+  utter_track_progress:
+    - text: "Your personal dashboard on IRead.tn allows you to track your progress. It shows the books you've completed, your quiz scores, and your progression in language proficiency. You can set reading goals and receive recommendations based on your interests and reading history."
+
+  utter_encounter_technical_issues:
+    - text: "If you face technical issues, first try refreshing the page or restarting your device. If the problem persists, consult our Help Center for troubleshooting tips. You can also contact our support team through the 'Contact Us' page, providing details of the issue for prompt assistance."
+
+  utter_privacy_security_data:
+    - text: "We prioritize the privacy and security of our users' data. Our platform uses encryption and secure data storage practices. We do not share personal information with third parties without consent. For more details, you can view our Privacy Policy, which outlines our data handling practices and your rights as a user."
+
+  utter_access_special_copies_discounts:
+    - text: "Special signed copies and discounts are available periodically. To access these, regularly check our 'Exclusive Offers' section. You can also subscribe to our newsletter to get notifications about new deals and special releases. These offers are available on a first-come, first-served basis, so we recommend checking in frequently."
 
 session_config:
   session_expiration_time: 60

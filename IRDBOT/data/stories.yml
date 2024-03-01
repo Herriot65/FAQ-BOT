@@ -2,29 +2,51 @@ version: "3.1"
 
 stories:
 
-- story: happy path
+- story: greeting
   steps:
   - intent: greet
   - action: utter_greet
-  - intent: mood_great
-  - action: utter_happy
+  - intent: user_state
+  - action: utter_user_state
 
-- story: sad path 1
+- story: choose book path
   steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: mood_unhappy
-  - action: utter_cheer_up
-  - action: utter_did_that_help
-  - intent: affirm
-  - action: utter_happy
+  - intent: choose_book
+  - action: utter_choose_book
 
-- story: sad path 2
+- story: participate in reading sessions path
   steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: mood_unhappy
-  - action: utter_cheer_up
-  - action: utter_did_that_help
-  - intent: deny
-  - action: utter_goodbye
+  - intent: participate_reading_sessions
+  - action: utter_participate_reading_sessions
+
+- story: explore quizzes and assignments path
+  steps:
+  - intent: available_quizzes_assignments
+  - action: utter_available_quizzes_assignments
+
+- story: connect with readers and authors path
+  steps:
+  - intent: connect_with_readers_authors
+  - action: utter_connect_with_readers_authors
+
+- story: track progress path
+  steps:
+  - intent: track_progress
+  - action: utter_track_progress
+
+- story: encounter technical issues path
+  steps:
+  - intent: asking_for_help
+  - action: utter_asking_for_help
+  - intent: encounter_technical_issues
+  - action: utter_encounter_technical_issues
+
+- story: privacy and security path
+  steps:
+  - intent: privacy_security_data
+  - action: utter_privacy_security_data
+
+- story: access special copies and discounts path
+  steps:
+  - intent: access_special_copies_discounts
+  - action: utter_access_special_copies_discounts

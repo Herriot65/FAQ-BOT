@@ -1,91 +1,103 @@
 version: "3.1"
 
 nlu:
-- intent: greet
-  examples: |
-    - hey
-    - hello
-    - hi
-    - hello there
-    - good morning
-    - good evening
-    - moin
-    - hey there
-    - let's go
-    - hey dude
-    - goodmorning
-    - goodevening
-    - good afternoon
+  - intent: greet
+    examples: |
+      - hey
+      - hello
+      - hi
+      - hello there
+      - good morning
+      - good evening
+      - moin
+      - hey there
+      - let's go
+      - hey dude
+      - goodmorning
+      - goodevening
+      - good afternoon
 
-- intent: goodbye
-  examples: |
-    - cu
-    - good by
-    - cee you later
-    - good night
-    - bye
-    - goodbye
-    - have a nice day
-    - see you around
-    - bye bye
-    - see you later
+  - intent: goodbye
+    examples: |
+      - cu
+      - good by
+      - cee you later
+      - good night
+      - bye
+      - goodbye
+      - thank you, see you later.
+      - thanks
+      - have a nice day
+      - see you around
+      - bye bye
+      - see you later
 
-- intent: affirm
-  examples: |
-    - yes
-    - y
-    - indeed
-    - of course
-    - that sounds good
-    - correct
+  - intent: choose_book
+    examples: |
+      - How do I choose the right book for my English level?
+      - Can you help me pick a book suitable for my English proficiency?
+      - What's the best way to find a book that matches my English skills?
 
-- intent: deny
-  examples: |
-    - no
-    - n
-    - never
-    - I don't think so
-    - don't like that
-    - no way
-    - not really
+  - intent: participate_reading_sessions
+    examples: |
+      - How can I participate in interactive reading sessions?
+      - What do I need to do to join the reading sessions?
+      - Can you tell me more about the interactive reading sessions?
 
-- intent: mood_great
-  examples: |
-    - perfect
-    - great
-    - amazing
-    - feeling like a king
-    - wonderful
-    - I am feeling very good
-    - I am great
-    - I am amazing
-    - I am going to save the world
-    - super stoked
-    - extremely good
-    - so so perfect
-    - so good
-    - so perfect
+  - intent: available_quizzes_assignments
+    examples: |
+      - What types of quizzes and assignments are available?
+      - Are there any quizzes or assignments I can take?
+      - Can you provide information about the quizzes and assignments offered?
 
-- intent: mood_unhappy
-  examples: |
-    - my day was horrible
-    - I am sad
-    - I don't feel very well
-    - I am disappointed
-    - super sad
-    - I'm so sad
-    - sad
-    - very sad
-    - unhappy
-    - not good
-    - not very good
-    - extremly sad
-    - so saad
-    - so sad
+  - intent: connect_with_readers_authors
+    examples: |
+      - How do I connect with other readers and authors on the platform?
+      - Is there a way to interact with fellow readers and writers?
+      - Can you help me engage with the community of readers and authors?
 
-- intent: bot_challenge
-  examples: |
-    - are you a bot?
-    - are you a human?
-    - am I talking to a bot?
-    - am I talking to a human?
+  - intent: track_progress
+    examples: |
+      - How can I track my reading and learning progress?
+      - Is there a feature to monitor my progress on the platform?
+      - Can I see my reading and learning statistics somewhere?
+
+  - intent: encounter_technical_issues
+    examples: |
+      - What should I do if I encounter technical issues on the platform?
+      - How do I report technical problems I encounter?
+      - Can you assist me with technical difficulties I'm facing?
+
+  - intent: privacy_security_data
+    examples: |
+      - How does IRead.tn ensure the privacy and security of my data?
+      - What measures are in place to protect my privacy and data security?
+      - Can you provide information about the privacy and security policies?
+
+  - intent: access_special_copies_discounts
+    examples: |
+      - How can I get access to special signed copies and discounts?
+      - Are there any special offers or discounts available for members?
+      - Can you tell me more about how to obtain special discounts and signed copies?
+
+  - intent: bot_challenge
+    examples: |
+      - are you a bot?
+      - are you a human?
+      - am I talking to a bot?
+      - am I talking to a human?
+
+  - intent: user_state
+    examples: |
+      - I'm doing well 
+      - I'm fine
+      - I'm feeling alright
+      - fine
+      - I am full of energy
+
+  - intent: asking_for_help
+    examples: |
+      - I have some questions about your services , can you help me?
+      - Can you assist me with understanding how to use iRead?
+      - I'm a bit confused about how iRead works, could you provide some guidance?
+      - I need assistance navigating through iRead's features, can you provide support?
